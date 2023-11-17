@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DRIVER</title>
+</head>
+<body>
+    <link rel="stylesheet" href="style.css">
+
+    <header class="header"> 
+        
+        <div class="logo-container">
+            <h1>DRIVER</h1>
+        </div>
+        <div class="burger-container">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+        </div>
+        <ul class="items-container">
+            <li>
+                <a href="">Motorista</a>
+            </li>
+            <li>
+                <a href="">sobre</a>
+            </li>
+            <li>
+                <a href="">conectar</a>
+            </li>
+            <li>
+                <a href="#conta" id="log">Entrar em conta</a>
+            </li>
+        </ul>
+    </header>  
+
+    <div class="background"></div>
+    <section class="cidade ">
+        <div class="cidade-form">
+            <div class="titulo-escolha">
+                <span onclick="cityClick()" id="titulocity">cidade</span>
+                <span onclick="regiaoClick()" id="titulore">região</span>
+            </div>
+            <form>
+                <div class="cidade">
+                <input type="text" id="city" placeholder="cidade">
+                </div>
+                <div class="regiao" >
+                    <input type="text" id="regiao" placeholder="Região">
+                    </div>
+            </form>
+            <div class="info-cidade">
+                <p>Ache motoristas perto de você
+                    para começar sua corrida.
+                </p>
+            </div>
+            <div class="procurar">
+                <button onclick="Procura()" id="btna">procurar</button>
+            </div>
+            <div class="box-procurar">
+                <img src="https://acdn.mitiendanube.com/stores/571/657/products/audi_vermelho___-removebg-preview1-6309ae995b58fe820916439949767053-640-0.png" alt="">
+                <span>?</span>
+                <h1>sem nenhum carro</h1>
+            </div>
+        </div>
+
+       
+
+        <div class="car-cidade">
+            <div class="car-img">
+                <img src="https://2.bp.blogspot.com/-gG_DIuoeGas/Tw5B-C9NvyI/AAAAAAAAAAM/7nilpNIkAe0/s1600/vehicle_2012_45th.png" alt="">
+            </div>
+            <div class="car-content" >
+                <h1>CHEVROLET CAMARO 2012</h1>
+                <p>A 20km de você</p>
+                <a onclick="libera1()" href="#camaro">Pedir</a>
+            </div>
+        </div>
+        <div class="car-cidade car-cidade2 ">
+            <div class="car-img">
+                <img src="https://cdn.wheel-size.com/automobile/body/bmw-x1-2009-2012-1565328458.09.png" alt="">
+            </div>
+            <div class="car-content car-content2">
+                <h1>bmw x1 2015</h1>
+                <p>A 40km de você</p>
+                <a onclick="libera2()" href="#x1">Pedir</a>
+            </div>
+        </div>
+        <div class="car-cidade car-cidade3">
+            <div class="car-img">
+                <img src="https://platform.cstatic-images.com/xlarge/in/v2/stock_photos/3ffd0551-fd03-4a5a-82e7-38a1f7dbbb9b/504d2dcf-1867-4c7b-a214-e026822307fe.png" alt="">
+            </div>
+            <div class="car-content">
+                <h1> Volkswagen jetta 2012</h1>
+                <p>A 10km de você</p>
+                <a onclick="libera3()" href="#jetta">Pedir</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="car-info">
+        <div class="container-car camaro-car" id="camaro">
+            <h1>CHEVROLET camaro 2012</h1>
+            <div class="slider-content">
+                <input type="radio" name="btn-radio" id="radio1">
+                <input type="radio" name="btn-radio" id="radio2">
+                <div class="slide-box primeiro">
+                   <img src="https://cdn.jdpower.com/ChromeImageGallery/Expanded/Transparent/640/2013CHE021d_640/2013CHE021d_640_02.png" alt="">
+                </div>
+    
+                <div class="slide-box "> 
+                  <img src="https://www.carscoops.com/wp-content/uploads/2011/04/3832a78a-2012-camaro-45th-se-13.jpg" alt="">
+                </div>
+
+                <div class="nav-auto">
+                    <div class="auto-btn1"></div>
+                    <div class="auto-btn2"></div>
+  
+                </div>
+    
+                <div class="nav-manual">
+                    <label for="radio1" class="manual-btn">exterior</label>
+                    <label for="radio2" class="manual-btn" id="btn-2">interior</label>
+            </div>
+            </div>
+            <div class="content-info">
+                <a href="#conta">pedir</a>
+                <span class="star" ><i class="fa-regular fa-star"></i></span>
+                <span class="star" ><i class="fa-regular fa-star"></i></span>
+                <span class="star" id="star3"><i class="fa-regular fa-star"></i></span>
+            </div>
+        </div>
+        
+
+        <div class="container-car x1-car" id="x1">
+            <h1>bmw x1 2015</h1>
+            <div class="slider-content">
+                <input type="radio" name="btn-radio" id="radio3">
+                <input type="radio" name="btn-radio" id="radio4">
+                <div class="slide-box primeiro">
+                    <img src="https://cdn.wheel-size.com/automobile/body/bmw-x1-2009-2012-1565328458.09.png" alt="">
+                </div>
+    
+                <div class="slide-box "> 
+                <img src="https://s2-autoesporte.glbimg.com/55kynUWmOoqChFswtU_Hgp-aa14=/0x0:620x400/984x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_cf9d035bf26b4646b105bd958f32089d/internal_photos/bs/2020/U/J/7z4RBAQZqhocApXs1eIQ/2015-06-03-interior-do-novo-bmw-x1.jpg" alt="">
+                </div>
+
+                <div class="nav-auto">
+                    <div class="auto-btn1"></div>
+                    <div class="auto-btn2"></div>
+  
+                </div>
+    
+                <div class="nav-manual">
+                    <label for="radio3" class="manual-btn">exterior</label>
+                    <label for="radio4" class="manual-btn" id="btn-2">interior</label>
+            </div>
+            </div>
+            <div class="content-info">
+                <a href="#conta">pedir</a>
+                <span class="star" ><i class="fa-regular fa-star"></i></span>
+                <span class="star" ><i class="fa-regular fa-star"></i></span>
+                <span class="star" id="star3"><i class="fa-regular fa-star"></i></span>
+            </div>
+        </div>
+
+        <div class="container-car jetta-car" id="jetta">
+            <h1>jetta 2012</h1>
+            <div class="slider-content">
+                <input type="radio" name="btn-radio" id="radio5">
+                <input type="radio" name="btn-radio" id="radio6">
+                <div class="slide-box primeiro">
+                    <img src="https://platform.cstatic-images.com/xlarge/in/v2/stock_photos/3ffd0551-fd03-4a5a-82e7-38a1f7dbbb9b/504d2dcf-1867-4c7b-a214-e026822307fe.png" alt="">
+                </div>
+    
+                <div class="slide-box "> 
+                 <img src="https://i.pinimg.com/originals/46/3b/05/463b0501b19b538944d593e232b2c64a.jpg" alt="">
+                </div>
+
+                <div class="nav-auto">
+                    <div class="auto-btn1"></div>
+                    <div class="auto-btn2"></div>
+  
+                </div>
+    
+                <div class="nav-manual">
+                    <label for="radio5" class="manual-btn">exterior</label>
+                    <label for="radio6" class="manual-btn" id="btn-2">interior</label>
+            </div>
+            </div>
+            <div class="content-info content-info3">
+                <a href="#conta">pedir</a>
+                <span class="star" ><i class="fa-regular fa-star"></i></span>
+                <span class="star" ><i class="fa-regular fa-star"></i></span>
+                <span class="star" id="star3"><i class="fa-regular fa-star"></i></span>
+            </div>
+        </div>
+    </section>
+
+    <div class="bmw-titulo">
+        <div class="bmw-img">
+            <img src="https://www.bmwofspokane.com/assets/stock/colormatched/transparent/1280/cc_2024bmc64_03_1280/cc_2024bmc640002_03_1280_300.png" alt="">
+        </div>
+        <div class="backgroud-bmw">
+            <div class="titulo-bmw">
+                <h1>Faça sua corrida ao luxo</h1>
+            </div>
+            <div class="container-maps">
+                <div class="maps-img">
+                <img src="https://dataintegration.info/wp-content/uploads/2021/06/066-MAP-Maps_Retail_Hero_Illus-ER_R8P1WuQ.max-600x600-x72zxq.png" alt="">
+                </div>
+                <div class="content-maps">
+                    <h1>Em qualquer lugar</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+ 
+    <div class="criar-conta">
+        <div class="criar-img">
+            <img src="https://img.freepik.com/vetores-gratis/aplicativo-de-taxi-do-servico-de-transporte_23-2148493911.jpg" alt="">
+        </div>
+      <div class="criar-content">
+        <h1>Crie sua conta agora</h1>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing
+            <br> elit. Recusandae voluptatum blanditiis, voluptatem numquam suscipit nisi.</p>
+        <a href="">Criar agora!</a>
+      </div>
+    </div>
+
+    <section class="aplicativo">
+        <div class="app-img">
+            <img src="https://macmagazine.com.br/wp-content/uploads/2015/06/24-google-maps-2.jpg" alt="">
+        </div>
+        <div class="app-content">
+            <h1>Baixe nosso app para pedir 
+                de forma mais simples e segura.
+            </h1>
+            
+            <div class="app-content-img">
+                <img src="https://play.google.com/intl/pt-BR/badges/static/images/badges/pt-br_badge_web_generic.png" alt="">
+                <img src="https://www.gov.br/pt-br/imagens-de-servicos/apple.png/@@images/image.png" alt="">
+            </div>
+        </div>
+    </section>
+
+    <div class="background-form">
+    <div class="conta" id="conta">
+        <div class="titulo-form">
+            <h1>Entre em sua conta para fazer seu pedido
+                em DRIVER
+            </h1>
+        </div>
+        <div class="conta-form">
+            <form action="">
+                <input type="email" id="email" placeholder="digite seu email">
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Harum velit, labore nisi.</p>
+                <br>
+                <input type="password" id="senha" placeholder="senha">
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Harum velit, labore nisi.</p>
+                <br>
+                <button id="btn">enviar</button>
+                <div class="logar">
+                    <h1>entrar com</h1>
+                    <div class="logar-img">
+                    <img src="http://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/Google_2015_logo.svg/1280px-Google_2015_logo.svg.png" alt="">
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+    </div>
+
+    <main class="card">
+        <section class="card-star">
+            <h1>Dê até 3 estrelas
+                para o seu motorista
+            </h1>
+            <div class="card-img">
+              <img src="https://cdn-icons-png.flaticon.com/256/3833/3833926.png" alt="">
+            </div>
+        </section>
+        <section class="card-star">
+            <h1>Motorista chega em menos de 15min.</h1>
+            <div class="card-img">
+               <img src="https://www.freeiconspng.com/thumbs/car-png/red-sports-car-png-1.png" alt="">
+            </div>
+        </section>
+    </main>
+    
+
+    <div class="slide-card">
+        <div class="slide-track">
+            <div class="slide" height="100px" width="250px">
+                <div class="slide-user">
+                <img src="https://www.pngmart.com/files/21/Account-User-PNG-Photo.png" alt="">
+                <h1>Raul</h1>
+                </div>
+                <p>Recebeu 3 estrelas</p>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+            </div>
+            <div class="slide" height="100px" width="250px">
+                <div class="slide-user">
+                <img src="https://www.pngmart.com/files/21/Account-User-PNG-Photo.png" alt="">
+                <h1>Raul</h1>
+                </div>
+                <p>Recebeu 3 estrelas</p>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+            </div> <div class="slide" height="100px" width="250px">
+                <div class="slide-user">
+                <img src="https://www.pngmart.com/files/21/Account-User-PNG-Photo.png" alt="">
+                <h1>Raul</h1>
+                </div>
+                <p>Recebeu 3 estrelas</p>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+            </div> <div class="slide" height="100px" width="250px">
+                <div class="slide-user">
+                <img src="https://www.pngmart.com/files/21/Account-User-PNG-Photo.png" alt="">
+                <h1>Raul</h1>
+                </div>
+                <p>Recebeu 3 estrelas</p>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+            </div> <div class="slide" height="100px" width="250px">
+                <div class="slide-user">
+                <img src="https://www.pngmart.com/files/21/Account-User-PNG-Photo.png" alt="">
+                <h1>Raul</h1>
+                </div>
+                <p>Recebeu 3 estrelas</p>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+            </div> <div class="slide" height="100px" width="250px">
+                <div class="slide-user">
+                <img src="https://www.pngmart.com/files/21/Account-User-PNG-Photo.png" alt="">
+                <h1>Raul</h1>
+                </div>
+                <p>Recebeu 3 estrelas</p>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+            </div>
+            <div class="slide" height="100px" width="250px">
+                <div class="slide-user">
+                <img src="https://www.pngmart.com/files/21/Account-User-PNG-Photo.png" alt="">
+                <h1>Raul</h1>
+                </div>
+                <p>Recebeu 3 estrelas</p>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+            </div>
+            <div class="slide" height="100px" width="250px">
+                <div class="slide-user">
+                <img src="https://www.pngmart.com/files/21/Account-User-PNG-Photo.png" alt="">
+                <h1>Raul</h1>
+                </div>
+                <p>Recebeu 3 estrelas</p>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+            </div> <div class="slide" height="100px" width="250px">
+                <div class="slide-user">
+                <img src="https://www.pngmart.com/files/21/Account-User-PNG-Photo.png" alt="">
+                <h1>Raul</h1>
+                </div>
+                <p>Recebeu 3 estrelas</p>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+            </div> <div class="slide" height="100px" width="250px">
+                <div class="slide-user">
+                <img src="https://www.pngmart.com/files/21/Account-User-PNG-Photo.png" alt="">
+                <h1>Raul</h1>
+                </div>
+                <p>Recebeu 3 estrelas</p>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+            </div> <div class="slide" height="100px" width="250px">
+                <div class="slide-user">
+                <img src="https://www.pngmart.com/files/21/Account-User-PNG-Photo.png" alt="">
+                <h1>Raul</h1>
+                </div>
+                <p>Recebeu 3 estrelas</p>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+            </div>
+            <div class="slide" height="100px" width="250px">
+                <div class="slide-user">
+                <img src="https://www.pngmart.com/files/21/Account-User-PNG-Photo.png" alt="">
+                <h1>Raul</h1>
+                </div>
+                <p>Recebeu 3 estrelas</p>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+            </div>
+            
+        </div>
+    </div>
+
+    <footer>
+        <div class="container-links">
+            <div class="links-1">
+                <h1>Ajuda</h1>
+            <a href="">motorista</a>
+            <br>
+            <a href="">motorista</a>
+            <br>
+            <a href="">motorista</a>
+            <br>
+            <a href="">ajuda</a>
+            </div>
+
+            <div class="links-1">
+                <h1>olla</h1>
+                <a href="">motorista</a>
+                <br>
+                <a href="">motorista</a>
+                <br>
+                <a href="">motorista</a>
+               <br>
+               <a href="">blog</a>
+               <br>
+               <a href="">conectar</a>
+               </div>
+
+               <div class="links-1">
+                <h1>Baixe o app</h1>
+                <a href="">APP STRORE</a>
+            <br>
+            <a href="">play store</a>
+               </div>
+
+               <div class="links-1">
+                <h1>oportunidade</h1>
+                <a href="" id="link-footer"> nosso motorista</a>
+               </div>
+        </div>
+        <div class="sociais">
+            <h1>Redes sociais</h1>
+            <p>&copy;raulcacula</p>
+            <a href="https://github.com/raulcacula"><i class="fa-brands fa-github"></i></a>
+            <a href="https://www.instagram.com/raulhenrique14/"><i class="fa-brands fa-instagram"></i></a>
+
+        </div>
+    </footer>
+
+    <script src="https://kit.fontawesome.com/43fd509247.js" crossorigin="anonymous"></script>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
+    <script src="planet.js"></script>
+</body>
+</html>
